@@ -1,0 +1,87 @@
+.custom-marker-class
+  background-image: url(../assets/map_pin.png)
+  background-repeat: no-repeat
+  background-size: contain
+  transform: translate(-50%, -100%)
+  display: inline-block
+  height: 86px
+  width: 66px
+  img
+    position: relative
+    border-radius: 50%
+    display: inline-block
+    object-fit: cover
+    height: 40px
+    width: 40px
+    top: 12px
+    left: 12px
+
+.location-description.location-item
+  padding: 0
+  min-height: initial
+
+.jconfirm
+  &.jconfirm-white .jconfirm-box .jconfirm-buttons button.btn-default, &.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default
+    min-width: initial
+    width: 48%
+
+td.no_listings_to_show
+  background: none !important
+  width: 100% !important
+  text-align: center !important
+  padding: 20px !important
+  p
+    color: #00897b !important
+    margin: 0
+
+.input-error
+  border-color: rgb(255, 0, 0) !important
+  color: rgba(150, 0, 0, 0.96) !important
+
+.upload-property-form .thumbnail-preview
+  position: relative
+  .remove-image
+    position: absolute
+    top: 15px
+    right: 25px
+    z-index: 4
+    height: 20px
+    width: 20px
+    background: transparent
+    cursor: pointer
+    &:before
+      position: absolute
+      top: 0
+      right: 8px
+      z-index: 3
+      content: ""
+      height: 20px
+      width: 5px
+      background: rgb(255, 74, 74)
+      transform: rotateZ(-45deg)
+    &:after
+      position: absolute
+      top: 0
+      right: 8px
+      z-index: 3
+      content: ""
+      height: 20px
+      width: 5px
+      background: rgb(255, 74, 74)
+      cursor: pointer
+      transform: rotateZ(45deg)
+    &:hover
+      &:before, &:after
+        background: rgb(255, 0, 0)
+
+.selected .image img
+  border: 3px solid rgb(255, 74, 74)
+
+.service-block-info .block-info-inner i.icon
+  width: auto !important
+  height: auto !important
+
+.wp-caption, .wp-caption-text, .sticky, .screen-reader-text, .gallery-caption, .bypostauthor, .alignright, .alignleft, .aligncenter
+
+.no-padding
+  padding: 0

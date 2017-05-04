@@ -1,0 +1,439 @@
+.destination-box
+	
+	.box-cover
+		position: relative
+		display: block
+		margin:
+			bottom: 15px
+
+		.destination-facilities
+			position: absolute
+			text-align: center
+			display: block
+			line-height: 1em
+			font-size: 0
+			z-index: 2
+			bottom: 5%
+			right: 0
+			left: 0			
+
+			li
+				display: inline-block
+
+				&:not(:last-of-type)
+					margin:
+						right: 10px
+
+				> i
+					background: rgba(#fff, .6)
+					display: inline-block
+					border-radius: 50%
+					line-height: 40px
+					font-size: 18px
+					height: 40px
+					width: 40px
+					color: #171132
+
+		.destination-price
+			position: absolute
+			z-index: 2
+			top: 25px
+			right: 0
+
+			.actual-price
+				display: inline-block
+				background: #00897b
+				line-height: 1em
+				padding: 9px 10px 9px 20px
+
+				.value
+					display: inline-block
+					line-height: 1em
+					font-size: 36px
+					color: #fff
+					margin:
+						right: 3px
+
+					sup
+						display: inline-block
+						vertical-align: top
+						position: relative
+						line-height: 1em
+						font-size: 13px
+						top: 6px
+						margin:
+							right: 5px
+				
+				.text
+					display: inline-block
+					position: relative
+					vertical-align: top
+					line-height: 1em
+					max-width: 45px
+					font-size: 13px
+					color: #c0c1c2
+					top: 6px
+
+			.old-price
+				transform: translate(-100%, -50%)
+				position: absolute
+				opacity: .6
+				left: -20px
+				top: 50%
+
+				.value
+					line-height: 1em
+					font-size: 36px
+					color: #fff
+
+					&:after
+						content: ""
+						transform: translate(-50%, -50%) rotate(-35deg)
+						display: inline-block
+						position: absolute
+						background: #fff
+						width: calc(100% + 20px)
+						z-index: 2
+						height: 1px
+						left: 50%
+						top: 50%
+
+					sup
+						transform: translate(-100%, 0)
+						position: absolute
+						line-height: 1em
+						font-size: 13px
+						left: -4px
+						margin: 0
+						top: 7px
+
+		.box-meta
+			position: absolute
+			text-align: left
+			padding: 0 7.2% 6%
+			z-index: 2
+			bottom: 0
+			right: 0
+			left: 0
+
+			.title,
+			.description
+				text-align: left
+				min-height: 0
+				padding: 0
+				margin: 0
+
+			.title
+				color: #fff
+				margin:
+					bottom: 5px !important
+
+				a
+
+					&:hover
+						color: darken( #fff, 10% )
+
+			.description
+				color: darken( #fff, 5% )
+
+		.image
+			position: relative
+
+			&:after
+				content: ""
+				transition: all 300ms $ease-in-out-quad
+				background: rgba( #000, .5 )
+				pointer-events: none
+				position: absolute
+				opacity: 0
+				height: 100%
+				width: 100%
+				z-index: 1
+				left: 0
+				top: 0
+
+		&:hover
+
+			.image
+
+				&:after
+					opacity: 1
+
+	.box-background-image
+		display: block
+		width: 100%
+
+	.box-meta
+
+		.title
+			text-transform: uppercase
+			letter-spacing: .05em
+			text-align: center
+			line-height: 1.5em
+			min-height: 54px
+			font-weight: 400
+			font-size: 18px
+			color: #f26f72
+			padding:
+				right: 10px
+				left: 10px
+			margin:
+				bottom: 15px
+
+			a
+				transition: all 200ms $ease-in-out-quad
+
+				&:hover
+					color: #171132
+
+		.description
+			text-transform: uppercase
+			letter-spacing: .05em
+			line-height: 1.75em
+			text-align: center
+			font-size: 13px
+
+		.location
+			text-align: center
+			line-height: 1em
+			margin:
+				bottom: 20px
+
+			.text
+				display: inline-block
+
+				&:before
+					+icon( e934 )
+					position: relative
+					display: inline-block
+					margin:
+						right: 7px
+					top: 1px
+
+		&.left
+			padding:
+				left: 40px
+				top: 5px
+				
+			.location
+				text-align: left
+				margin: 0
+
+	.box-footer
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border: 2px solid #e2e5e8
+		border-radius: 8px
+		line-height: 1em
+		padding: 15px 18px
+
+		.rating
+			display: flex
+			align-items: center
+
+		.bars
+			margin:
+				right: 8px
+
+			i
+				display: inline-block
+				background: #fff
+				height: 14px
+				width: 6px
+
+				&.full
+					background: #ff9800
+
+				&:not(:last-of-type)
+					margin:
+						right: 2px
+
+		.destination-url
+			text-transform: uppercase
+			letter-spacing: .05em
+			font-size: 13px
+			color: #f26f72
+
+			&:hover
+				color: #171132
+
+	@media (max-width: 1200px)
+
+		.box-cover
+
+			.destination-price
+
+				.actual-price
+					padding: 9px 2px 9px 12px
+
+					.value
+						font-size: 28px
+
+						sup
+							margin:
+								right: 3px
+							top: 4px
+
+					.text
+						top: 1px
+
+				.old-price
+					left: -15px
+
+					.value
+						font-size: 28px
+
+						sup
+							left: -3px
+							top: 4px
+
+			.destination-facilities
+
+				li
+
+					> i
+						line-height: 32px
+						font-size: 14px
+						padding:
+							left: 1px
+						height: 32px
+						width: 32px
+
+			.box-meta
+				padding: 0 5% 5%
+
+		.box-meta
+
+			&.left
+				padding:
+					left: 15px
+					top: 0
+
+			.title
+				min-height: 44px
+				font-size: 16px
+
+			.description
+				font-size: 12px
+				margin:
+					bottom: 20px
+
+// Destinations Carousel
+
+.destinations-carousel
+	
+	.carousel-items
+		margin:
+			right: -15px
+			left: -15px
+
+		.carousel-item
+			padding:
+				right: 15px
+				left: 15px
+
+		*
+			outline: none !important
+
+	.slick-arrow
+		display: inline-block
+		position: absolute
+		line-height: 1em
+		background: 0
+		font-size: 0
+		z-index: 2
+		padding: 0
+		border: 0
+		top: 33%
+		
+		&:before
+			+icon( e92b )
+			transition: all 270ms $ease-in-out-quad
+			display: inline-block
+			line-height: 1em
+			font-size: 48px
+			color: #bdbdbd
+
+		&.slick-next
+			transform: translate(70px, 0)
+			right: 0
+
+			&:before
+				transform: rotateY(180deg)
+
+		&.slick-prev
+			transform: translate(-70px, 0)
+			left: 0
+
+		&:hover
+
+			&:before
+				color: #515151
+
+		@media (max-width: 800px)
+			display: none !important
+
+	.slick-dots
+		display: block
+		text-align: center
+		padding:
+			top: 35px
+
+		li
+			display: inline-block
+			border: 2px solid #616161
+			border-radius: 50%
+			cursor: pointer
+			height: 15px
+			width: 15px
+
+			&.slick-active
+
+				button
+					transform: scale(1)
+
+			button
+				transform: scale(0)
+				transition: all 150ms $ease-in-out-quad
+				position: relative
+				display: inline-block
+				vertical-align: top
+				background: #616161
+				border-radius: 50%
+				font-size: 0
+				height: 7px
+				width: 7px
+				padding: 0
+				border: 0
+				top: 2px
+
+			&:not(:last-of-type)
+				margin:
+					right: 15px
+
+		@media (min-width: 800px)
+			display: none !important
+
+	@media (max-width: 1200px)
+
+		.slick-arrow
+
+			&.slick-next
+				transform: translate(50px, 0)
+
+			&.slick-prev
+				transform: translate(-50px, 0)
+
+			&:before
+				font-size: 36px
+
+	@media (min-width: 1200px) and (max-width: 1310px)
+		padding:
+			right: 50px
+			left: 50px
+
+	@media (min-width: 992px) and (max-width: 1140px)
+		padding:
+			right: 50px
+			left: 50px

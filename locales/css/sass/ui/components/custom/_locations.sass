@@ -1,0 +1,797 @@
+.map-locations-box
+	overflow: hidden
+	display: block
+	height: 100vh
+	padding:
+		top: 108px
+
+	.map-locations-box-inner
+		display: flex
+		align-items: stretch
+		height: 100%
+
+		> .box-inner-col
+			position: relative
+			height: 100%
+			width: 50%
+
+	#map-canvas
+		display: block
+		height: 100%
+		width: 100%
+
+	.locations-results
+		background: #fff
+		overflow: auto
+		height: 100%
+
+		.results-list
+			padding: 27px
+
+			.location-item
+				transition: all 300ms $ease-in-out-quad
+
+			&.highlight-locations
+
+				.location-item
+					opacity: .3
+
+					&:hover
+						opacity: .85
+
+					&.active-location
+						opacity: 1 !important
+
+	.results-filters
+		background: #eceff1
+
+		.price-filter-block
+			display: flex
+			align-items: flex-start
+			padding: 15px 25px
+
+			.block-title
+				text-transform: uppercase
+				white-space: nowrap
+				letter-spacing: .05em
+				margin:
+					right: 20px
+				color: #616161
+
+			.price-range-block
+				cursor: pointer
+
+				.amount
+					display: inline-block
+					width: 52px
+
+				.icon-usd
+					transition: all 200ms $ease-in-out-quad
+					opacity: .45
+
+					&.full
+						opacity: 1
+
+				input
+
+					&:checked
+
+						+ .amount
+
+							.icon-usd
+								color: #3f51b5
+
+				&:not(:last-of-type)
+					margin:
+						right: 20px
+
+		.filters-categories
+			display: block
+			border:
+				top: 1px solid rgba( #000, .05 )
+			padding: 20px 25px 21px
+
+		.choosed-categories
+			line-height: 1em
+			font-size: 0
+
+			.category
+				display: inline-block
+				background: #3f51b5
+				border-radius: 3px
+				line-height: 27px
+				font-size: 13px
+				padding: 0 9px
+				height: 27px
+				color: #fff
+
+				.remove-category
+					display: inline-block
+					position: relative
+					cursor: pointer
+					height: 12px
+					width: 12px
+					margin:
+						left: 15px
+					top: 2px
+
+					&:before,
+					&:after
+						content: ""
+						background: rgba( #fff, .5 )
+						display: inline-block
+						position: absolute
+						height: 2px
+						width: 100%
+						left: 50%
+						top: 50%
+
+					&:before
+						transform: translate(-50%, -50%) rotate(-45deg)
+
+					&:after
+						transform: translate(-50%, -50%) rotate(45deg)
+
+				&:not(:last-of-type)
+					margin:
+						bottom: 4px
+						right: 4px
+
+		.categories-list-wrapper
+			display: flex
+			align-items: flex-start
+			margin:
+				bottom: 5px
+
+			.list-title
+				text-transform: uppercase
+				letter-spacing: .05em
+				white-space: nowrap
+				line-height: 1em
+				margin:
+					right: 20px
+				color: #616161
+
+			.categories-list
+				line-height: 1em
+				font-size: 0
+
+				li
+					transition: all 150ms $ease-in-out-quad
+					display: inline-block
+					line-height: 1em
+					font-size: 13px
+					cursor: pointer
+					color: #9e9e9e
+
+					&:hover
+						color: #3f51b5
+
+					&:not(:last-of-type)
+						margin:
+							right: 15px
+							bottom: 7px
+
+		.filter-select-boxes
+			padding: 30px 20px 10px
+
+			.select-options
+				display: block
+				width: 100%
+				border: 2px solid #616161
+				border-radius: 4px
+				line-height: 50px
+				font-size: 18px
+				padding: 0 18px
+				cursor: pointer
+				display: block
+				background: 0
+				height: 54px
+				color: #6b6b6b
+				outline: none
+
+				&:not(:last-of-type)
+					margin:
+						bottom: 25px
+
+				@media (max-width: 450px)
+					padding: 0 10px
+					font-size: 15px
+					height: 44px
+
+			@media (min-width: 992px)
+				display: none
+
+	@media (max-width: 1200px)
+		padding:
+			top: 98px
+
+	@media (max-width: 991px)
+		height: auto
+
+		.map-locations-box-inner
+			flex-direction: column
+			height: auto
+
+			> .box-inner-col
+				height: auto
+				width: 100%
+
+			.locations-map
+				height: 60vh
+
+	@media (max-width: 500px)
+
+		.results-filters
+
+			.price-filter-block
+				flex-direction: column
+
+				.block-title
+					margin: 0 0 10px
+
+			.categories-list-wrapper
+				flex-direction: column
+				align-items: flex-start
+
+				.list-title
+					margin: 0 0 10px
+
+	@media (max-width: 450px)
+		padding:
+			top: 78px		
+
+// Location Item
+
+.location-item
+	position: relative
+	display: block
+	padding:
+		left: 180px
+	min-height: 135px
+
+	&:not(:last-of-type)
+		margin:
+			bottom: 25px
+
+		.item-body
+			border:
+				bottom: 1px solid #e0e0e0
+			padding:
+				bottom: 22px
+
+	.image
+		position: absolute
+		line-height: 1em
+		display: block
+		font-size: 0
+		width: 150px
+		left: 0
+		top: 0
+
+		.add-to-favorites
+			position: absolute
+			backface-visibility: hidden
+			border-radius: 50%
+			cursor: pointer
+			z-index: 3
+			right: 5px
+			top: 5px
+
+			i
+				transition: all 200ms $ease-in-out-quad
+				background: rgba( #000, .3 )
+				backface-visibility: hidden
+				display: inline-block
+				border-radius: 50%
+				font-size: 14px
+				line-height: 40px
+				text-align: center
+				height: 40px
+				width: 40px
+				color: #fff
+
+			&.added,
+			&:hover
+
+				i
+					background: #f26f72
+
+			&.added
+				animation: bounceIn 500ms
+
+		a
+			display: block
+			line-height: 1em
+			font-size: 0
+
+			&:before
+				content: ""
+				transition: all 250ms $ease-in-out-quad
+				background: rgba( #fff, .5 )
+				position: absolute
+				z-index: 2
+				opacity: 0
+				bottom: 0
+				right: 0
+				left: 0
+				top: 0
+
+		img
+			width: 100%
+
+		&:hover
+
+			a
+
+				&:before
+					opacity: 1
+
+	.item-body
+
+		.item-title
+			text-transform: uppercase
+			letter-spacing: .05em
+			line-height: 1em
+			font-size: 18px
+			color: #616161
+			margin: 0 0 10px
+
+			a
+
+				&:hover
+					color: darken( #616161, 15% )
+
+		.location
+			line-height: 1em
+			font-size: 13px
+			color: #9e9e9e
+			margin:
+				bottom: 13px
+
+			&:before
+				+icon( e934 )
+				display: inline-block
+				margin:
+					right: 5px
+
+		.rating
+			display: flex
+			align-items: center
+			line-height: 1em
+			font-size: 0
+
+			.bars
+				margin:
+					right: 7px
+
+				i
+					display: inline-block
+					background: #eceff1
+					height: 14px
+					width: 6px
+
+					&.full
+						background: #ff9800
+
+					&:not(:last-of-type)
+						margin:
+							right: 3px
+
+			.value
+				font-size: 13px
+				color: #b6b6bf
+
+		.item-facilities
+			display: block
+			line-height: 1em
+			font-size: 0
+			z-index: 2
+			padding:
+				top: 15px
+
+			li
+				display: inline-block
+
+				&:not(:last-of-type)
+					margin:
+						right: 10px
+
+				> i
+					display: inline-block
+					background: #e8e8e8
+					text-align: center
+					border-radius: 50%
+					line-height: 40px
+					font-size: 18px
+					height: 40px
+					width: 40px
+					color: #171132
+
+		.price-range
+			margin:
+				left: 20px
+			line-height: 1em
+			font-size: 0
+
+			.amount
+				line-height: 1em
+
+				i
+					font-size: 15px
+					color: #d3d3d3
+
+					&:not(:last-of-type)
+						margin:
+							right: 4px
+
+					&.full
+						color: #71b071
+
+		.review-details
+			display: flex
+			align-items: center
+
+	@media (max-width: 500px)
+		padding:
+			left: 150px
+
+		.image
+			width: 130px
+
+			.add-to-favorites
+
+				i
+					line-height: 32px
+					font-size: 12px
+					height: 32px
+					width: 32px
+
+		.item-body
+
+			.item-title
+				font-size: 16px
+
+			.item-facilities
+				padding:
+					top: 12px
+
+				li
+
+					> i
+						line-height: 32px
+						font-size: 16px
+						height: 32px
+						width: 32px
+
+					&:not(:last-of-type)
+						margin:
+							right: 7px
+
+	@media (max-width: 400px)
+		padding:
+			left: 0
+
+		.image
+			position: relative
+			display: block
+			margin:
+				bottom: 20px
+
+// Single Location Block
+
+.single-location-block
+	padding:
+		bottom: 55px
+		top: 130px
+
+	@media (max-width: 1200px)
+		padding:
+			top: 110px
+
+	@media (max-width: 450px)
+		padding:
+			top: 80px
+
+.single-location-cover
+	display: block
+	margin:
+		bottom: 80px
+
+	.cover-slider
+		position: relative
+		z-index: 2
+
+		*
+			outline: none
+
+		.slides-list
+
+			img
+				width: 100%
+
+		.slick-dots
+			transform: translate(-50%, 0)
+			background: rgba( #000, .4 )
+			border-radius: 25px
+			padding: 16px 20px
+			position: absolute
+			line-height: 1em
+			font-size: 0
+			bottom: 35px
+			z-index: 2
+			left: 50%
+
+			li
+				transition: all 200ms $ease-in-out-quad
+				display: inline-block
+				background: #fff
+				cursor: pointer
+				opacity: .3
+				height: 9px
+				width: 9px
+
+				&.slick-active
+					opacity: 1
+
+				button
+					display: none
+
+				&:not(:last-of-type)
+					margin:
+						right: 20px
+
+		.slick-arrow
+			position: absolute
+			transform: translate(0, -50%)
+			background: rgba( #464646, .4 )
+			vertical-align: middle
+			text-align: center
+			line-height: 80px
+			font-size: 0
+			height: 80px
+			width: 65px
+			z-index: 2
+			border: 0
+			top: 50%
+
+			&:before
+				+icon( e92b )
+				transition: inherit
+				display: inline-block
+				color: rgba( #fff, .2 )
+				font-size: 48px
+
+			&:hover
+				background: #464646
+
+				&:before
+					color: #bdbdbd
+
+			&.slick-next
+				right: 0
+
+				&:before
+					transform: rotateY(180deg)
+
+			&.slick-prev
+				left: 0
+
+	@media (max-width: 991px)
+		margin:
+			bottom: 60px
+
+		.cover-slider
+
+			.slick-dots
+				padding: 14px 17px
+				bottom: 20px
+
+			.slick-arrow
+				line-height: 70px
+				height: 70px
+				width: 50px
+
+				&:before
+					font-size: 32px
+
+	@media (max-width: 450px)
+
+		.cover-slider
+
+			.slick-arrow
+				line-height: 50px
+				height: 50px
+				width: 30px
+
+				&:before
+					font-size: 22px
+
+			.slick-dots
+				display: none !important
+
+.single-location-body
+	
+	.location-description
+		position: relative
+		display: block
+		padding:
+			bottom: 70px
+		margin:
+			bottom: 70px
+		border:
+			bottom: 1px solid #e0e0e0
+
+		.add-to-favorites
+			position: absolute
+			display: inline-block
+			border-radius: 50%
+			line-height: 1em
+			cursor: pointer
+			right: 0
+			top: 0
+
+			i
+				transition: all 200ms $ease-in-out-quad
+				background: rgba( #000, .3 )
+				backface-visibility: hidden
+				display: inline-block
+				border-radius: 50%
+				font-size: 14px
+				line-height: 40px
+				text-align: center
+				height: 40px
+				width: 40px
+				color: #fff
+
+			&.added,
+			&:hover
+
+				i
+					background: #f26f72
+
+			&.added
+				animation: bounceIn 500ms
+
+		.description-header
+			display: flex
+			align-items: center
+			margin:
+				bottom: 15px
+
+			.location-title
+				text-transform: uppercase
+				letter-spacing: .05em
+				line-height: 1em
+				font-size: 18px
+				color: #616161
+				margin:
+					right: 20px
+
+			.rating
+				display: flex
+				align-items: center
+				line-height: 1em
+				font-size: 0
+
+				.bars
+					margin:
+						right: 7px
+
+					i
+						display: inline-block
+						background: #fff
+						height: 14px
+						width: 6px
+
+						&.full
+							background: #ff9800
+
+						&:not(:last-of-type)
+							margin:
+								right: 3px
+
+				.value
+					line-height: 1em
+					font-size: 13px
+					color: #b6b6bf
+
+		.location-address
+			line-height: 1em
+			font-size: 13px
+			color: #9e9e9e
+
+			&:before
+				+icon( e934 )
+				display: inline-block
+				position: relative
+				margin:
+					right: 5px
+				top: 1px
+
+		.location-meta
+			display: flex
+			align-items: center
+			margin:
+				bottom: 30px
+
+			.location-facilities
+				display: block
+				line-height: 1em
+				font-size: 0
+				z-index: 2
+
+				li
+					display: inline-block
+
+					&:not(:last-of-type)
+						margin:
+							right: 10px
+
+					> i
+						display: inline-block
+						background: #dcdfe0
+						text-align: center
+						border-radius: 50%
+						line-height: 40px
+						font-size: 18px
+						height: 40px
+						width: 40px
+						color: #171132
+
+			.price-range
+				line-height: 1em
+				font-size: 0
+				margin:
+					left: 20px
+
+				.amount
+					line-height: 1em
+
+					i
+						font-size: 16px
+						color: #d3d3d3
+
+						&:not(:last-of-type)
+							margin:
+								right: 4px
+
+						&.full
+							color: #71b071
+
+		.location-text
+			line-height: 1.8em
+			font-size: 15px
+			color: #616161
+			margin: 0
+
+		.location-website
+			padding: 25px 0 0
+			line-height: 1em
+			font-size: 15px
+			color: #43a0ea
+			margin: 0
+
+			a
+
+				&:hover
+					color: #71b071
+
+	@media (max-width: 768px)
+
+		.location-description
+			padding:
+				bottom: 50px
+			margin:
+				bottom: 65px
+
+	@media (max-width: 450px)
+
+		.location-description
+			padding:
+				top: 40px
+
+			.add-to-favorites
+				right: auto
+				top: -25px
+				left: 0

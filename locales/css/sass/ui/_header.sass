@@ -1,0 +1,412 @@
+.main-header
+	position: absolute
+	display: block
+	z-index: 9
+	right: 0
+	left: 0
+	top: 0
+
+	.site-identity
+		backface-visibility: hidden
+		max-width: 80px
+		margin:
+			right: 80px
+
+	.header-inner
+		background: #fff
+		display: block
+		padding:
+			bottom: 25px
+			top: 25px
+
+		.select-box
+			margin:
+				right: 30px
+
+	.header-content
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	.user-profile-block
+		position: relative
+		margin:
+			left: auto
+
+		+ .search-form-toggle
+			margin:
+				left: 0
+
+		.profile-actions
+			display: flex
+			align-items: center
+
+			li
+				transition: all 200ms $ease-in-out-quad
+				text-transform: uppercase
+				line-height: 1em
+				font-size: 13px
+				cursor: pointer
+				color: $grey-4
+
+				i
+					position: relative
+					line-height: 1em
+					font-size: 16px
+					color: #bfbfbf
+					margin:
+						right: 10px
+					top: 2px					
+
+				&:hover
+					color: $blue-1
+
+				&:not(:last-of-type)
+
+					&:after
+						content: ""
+						position: relative
+						display: inline-block
+						margin: 0 16px 0 14px
+						background: #bdbdbd
+						height: 14px
+						width: 1px
+						top: 2px
+
+	.search-form-toggle
+		line-height: 1em
+		cursor: pointer
+		margin:
+			left: auto
+
+		i
+			transition: color 200ms $ease-in-out-quad
+			position: relative
+			line-height: 1em
+			font-size: 16px
+			color: $grey-3
+			margin:
+				left: 23px
+			top: 2px
+
+			&:hover
+				color: $blue-1
+
+	.side-menu-toggle
+		position: relative
+		cursor: pointer
+		margin:
+			left: 30px
+		top: 4px
+
+		i
+			font-size: 19px
+			color: #747474
+
+	.mobile-sideblock-toggle
+		line-height: 1em
+		cursor: pointer
+
+		i
+			transition: all 150ms ease-in-out
+			line-height: 1em
+			font-size: 24px
+
+		&:hover
+
+			i
+				color: #616161
+
+		@media (min-width: 992px)
+			display: none
+
+	&.header-side-nav
+
+		.header-inner
+			padding:
+				right: 40px
+				left: 40px
+
+		.site-identity
+			margin:
+				right: 30px
+			max-width: 58px
+
+		.main-nav
+			position: fixed
+			transition: transform 400ms $ease-in-out-quad 0s, opacity 250ms $ease-in-out-quad 0s
+			transform: translate(100%, 0)
+			backface-visibility: hidden
+			height: calc(100% - 108px)
+			pointer-events: none
+			background: #f5f5f5
+			padding: 45px 0
+			width: 455px
+			top: 108px
+			opacity: 0
+			right: 0
+
+			ul
+				text-align: center
+				display: block
+
+				li
+					display: block
+					padding: 0
+					margin: 0
+
+					a
+						display: block
+						padding: 20px 0
+						width: 100%
+
+						&:after
+							position: relative
+							margin:
+								left: 10px
+							right: auto
+							top: -2px
+
+						&.active
+
+							&:after
+								transform: rotateX(-180deg)
+
+						&:hover,
+						&.active
+							background: #eceff1
+
+					&.menu-item-has-children
+
+						> ul
+							display: none
+							transition: none
+							position: relative
+							visibility: visible
+							background: #fff
+							padding: 20px 0
+							width: 100%
+							opacity: 1
+							left: auto
+							top: auto
+
+							li
+								display: block
+								text-align: center
+								padding: 15px 0
+								border: 0
+
+								a
+									display: inline-block
+									width: auto
+									padding: 0
+
+									&:before,
+									&:after
+										display: none
+
+								&:hover
+
+									a
+										background: 0
+
+			&.show-main-nav
+				pointer-events: all
+				transform: translate(0, 0)
+				opacity: 1
+
+		@media (max-width: 1200px)
+
+			.main-nav
+				height: calc(100% - 98px)
+				top: 98px
+
+		@media (max-width: 991px)
+
+			.header-inner
+
+				.select-box
+					display: none
+
+					.select-box-input
+						min-width: 200px
+						width: 240px
+
+			.header-content
+				justify-content: initial
+
+			.mobile-sideblock-toggle
+				margin:
+					left: auto
+
+		@media (max-width: 450px)
+
+			.header-inner
+				padding:
+					right: 15px
+					left: 15px
+
+	@media (max-width: 1200px)
+
+		.header-inner
+			padding:
+				bottom: 20px
+				top: 20px
+
+		.site-identity
+			max-width: 70px
+			margin:
+				right: 50px
+
+	@media (max-width: 991px)
+
+		.header-content
+
+			> *
+
+				&:not(.site-identity):not(.mobile-sideblock-toggle):not(.select-box)
+					display: none
+
+	@media (max-width: 450px)
+
+		.header-inner
+			padding:
+				bottom: 10px
+				top: 10px
+
+		.site-identity
+			max-width: 60px
+
+// Main Nav Styling
+
+.main-nav
+	
+	> ul
+
+		> li
+			padding: 25px 0
+
+	ul
+		+clean-list
+
+		li
+			text-transform: uppercase
+			display: inline-block
+			letter-spacing: .3em
+			line-height: 1em
+			font-size: 13px
+
+			a
+
+				&:hover
+					color: $blue-1
+
+			&:not(:last-of-type)
+				margin:
+					right: 50px
+
+			&.menu-item-has-children
+				position: relative
+
+				> a
+					position: relative
+
+					&:after
+						content: ""
+						transition: inherit
+						display: inline-block
+						position: absolute
+						border:
+							color: #d5d5d5 transparent transparent transparent
+							width: 4px 4px 0 4px
+							style: solid
+						height: 0
+						width: 0
+						right: -15px
+						top: calc(50% - 2px)
+
+					&:hover
+
+						&:after
+							border-color: $blue-1 transparent transparent transparent
+
+				> ul
+					transition: all 200ms $ease-in-out-quad
+					visibility: hidden
+					background: $grey-5
+					position: absolute
+					display: block
+					opacity: 0
+					width: 260px
+					left: -12px
+					top: 100%
+
+					li
+						display: block
+						margin: 0
+
+						&:not(:last-of-type)
+							border:
+								bottom: 1px solid $grey-6
+
+						&:last-of-type
+
+							a
+
+								&:after
+									display: none
+
+						&:hover
+
+							a
+								background: $grey-2
+
+								&:before,
+								&:after
+									opacity: 1
+
+						a
+							position: relative
+							padding: 15px 30px
+							display: block
+							width: 100%
+
+							&:before,
+							&:after
+								content: ""
+								transition: opacity 150ms $ease-in-out-quad
+								position: absolute
+								background: $grey-2
+								opacity: 0
+								height: 1px
+								z-index: 2
+								right: 0
+								left: 0
+
+							&:before
+								top: -1px
+
+							&:after
+								bottom: -1px
+
+				&:hover
+
+					> a
+						color: $blue-1
+
+						&:after
+							border-color: $blue-1 transparent transparent transparent
+
+					> ul
+						visibility: visible
+						opacity: 1
+
+	@media (max-width: 1200px)
+
+		ul
+
+			li
+
+				&:not(:last-of-type)
+					margin:
+						right: 35px

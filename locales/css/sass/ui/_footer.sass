@@ -1,0 +1,93 @@
+.main-footer
+	background: #fff
+	padding:
+		bottom: 45px
+		top: 60px
+
+	.menu-links
+		text-align: center
+		margin:
+			bottom: 50px
+
+		ul
+			+clean-list
+			line-height: 1em
+
+			li
+				text-transform: uppercase
+				display: inline-block
+				letter-spacing: .2em
+				font-size: 13px
+				color: $grey-4
+
+				&:not(:last-of-type)
+					margin:
+						bottom: 20px
+						right: 50px
+
+				a
+
+					&:hover
+						color: $red-1
+
+	.copyright-message
+		text-transform: uppercase
+		letter-spacing: .05em	
+		text-align: center
+		font-size: 10px
+		color: $grey-8
+		margin: 0
+
+		a
+			&:hover
+				color: $blue-1
+
+	.social-block
+		text-align: center
+		line-height: 1em
+		margin:
+			bottom: 35px
+
+	@media (max-width: 991px)
+		padding:
+			bottom: 30px
+			top: 40px
+
+		.menu-links
+			margin:
+				bottom: 30px
+
+		.newsletter-subscribe-form
+			margin:
+				bottom: 40px
+
+	@media (max-width: 600px)
+
+		.menu-links
+			+clearfix
+			margin:
+				bottom: 15px
+
+			ul
+
+				li
+					text-align: left
+					display: block
+					float: left
+					width: 50%
+					margin: 0 0 15px !important
+
+	@media (max-width: 450px)
+
+		.social-block
+			margin:
+				bottom: 25px
+
+	@media (max-width: 350px)
+
+		.menu-links
+
+			ul
+
+				li
+					width: 100%

@@ -1,0 +1,88 @@
+.clean-list
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+	li
+		list-style-type: none
+
+.align-left
+	text-align: left
+
+.align-right
+	text-align: right
+
+.align-center
+	text-align: center
+
+[class^="icon-"],
+[class*=" icon-"]
+	display: inline-block
+
+.content-box
+	position: relative
+	overflow-x: hidden
+
+	> .section
+
+		&:first-child
+			padding:
+				top: 210px
+
+			@media (max-width: 768px)
+				padding:
+					top: 140px
+
+.page-overlay
+	transition: all 300ms $ease-in-out-quad
+	background: rgba( #353236, .73 )
+	visibility: hidden
+	position: fixed
+	height: 100%
+	width: 100%
+	opacity: 0
+	z-index: 3
+	left: 0
+	top: 0
+
+	&.high-index
+		background: rgba( #353236, .825 )
+		z-index: 90
+
+	&.page-overlay-visible
+		visibility: visible
+		opacity: 1
+
+#page
+	transition: all 500ms $ease-in-out-quad
+	opacity: 0
+
+	&.dom-ready
+		opacity: 1
+
+img
+	max-width: 100%
+	height: auto
+
+html
+	position: relative
+
+	.row-fit
+		margin: 0
+
+		.row
+			margin: 0
+
+		[class*="col-"],
+		.vc_column_container > .vc_column-inner
+			padding: 0
+
+	.row-fit-10
+		margin: 0 -10px
+
+		[class*="col-"],
+		.vc_column_container > .vc_column-inner
+			padding: 0 10px
+
+body
+	background: $grey-2

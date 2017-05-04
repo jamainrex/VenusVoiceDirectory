@@ -1,0 +1,604 @@
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="submit"],
+input[type="search"],
+input[type="button"],
+textarea,
+button
+	-webkit-appearance: none
+	transition: all 200ms $ease-in-out-quad
+	border-radius: 0
+	outline: none
+
+// Main Search Form
+
+.main-search-form
+	transition: all 250ms $ease-in-out-quad
+	transform: translate(0, -100%)
+	background: #009688
+	position: absolute
+	visibility: hidden
+	display: block
+	height: 100%
+	width: 100%
+	z-index: 2
+	opacity: 0
+	left: 0
+	top: 0
+
+	> .container
+		display: flex
+		align-items: center
+		height: 100%
+
+	.input-line
+		position: relative
+		display: block
+		width: 100%
+
+		.form-input
+			+apply-placeholder( rgba(#fff, .3) )
+			font-size: 27px
+			display: block
+			background: 0
+			width: 100%
+			color: #fff
+			border: 0
+
+		.clear-input
+			transition: all 200ms $ease-in-out-quad
+			transform: translate(0, -50%)
+			display: inline-block
+			position: absolute
+			cursor: pointer
+			height: 32px
+			width: 32px
+			opacity: .3
+			right: 0
+			top: 50%
+
+			&:before,
+			&:after
+				content: ""
+				display: inline-block
+				position: absolute
+				background: #fff
+				width: 100%
+				height: 1px
+				left: 50%
+				top: 50%
+
+			&:before
+				transform: translate(-50%, -50%) rotate(45deg)
+
+			&:after
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+			&:hover
+				opacity: 1
+
+	&.form-open
+		transform: translate(0, 0)
+		visibility: visible
+		opacity: 1
+
+// Newsletter Form
+
+.newsletter-subscribe-form
+	display: block
+	max-width: 580px
+	margin: 0 auto 60px
+
+	.form-title
+		text-align: center
+		line-height: 1.3em
+		display: block
+		font-size: 18px
+		color: $blue-1
+		margin: 0 0 20px
+
+	.input-line
+		position: relative
+		display: block
+
+		.form-input
+			+apply-placeholder( $grey-3 )
+			border: 2px solid $grey-7
+			border-radius: 3px
+			font-size: 18px
+			display: block
+			height: 54px
+			width: 100%
+			padding:
+				right: 63px
+				left: 18px
+			color: $blue-1
+
+			&:focus,
+			&.has-value
+				border-color: darken( $grey-7, 25% )
+
+		.form-submit
+			display: inline-block
+			position: absolute
+			line-height: 1em
+			background: 0
+			font-size: 0
+			right: 16px
+			padding: 0
+			border: 0
+			top: 13px
+
+			i
+				transition: inherit
+				line-height: 1em
+				font-size: 26px
+				color: $blue-1
+
+				&:hover
+					color: $red-1
+
+	@media (max-width: 450px)
+
+		.input-line
+
+			.form-input
+				padding:
+					left: 12px
+				font-size: 15px
+				height: 44px
+
+			.form-submit
+				right: 12px
+
+				i
+					font-size: 18px
+
+// Comments Form
+
+.comments-form
+	position: relative
+	display: block
+	margin:
+		bottom: 25px
+
+	.logged-in-as
+		display: block
+		margin:
+			bottom: 20px
+			top: -20px
+
+		a
+
+			&:hover
+				color: #171132
+
+		+ .rating-block
+			top: -15px
+
+	.rating-block
+		transform: translate(0, -100%)
+		position: absolute
+		top: -35px
+		right: 0
+
+		.rating
+			display: flex
+			align-items: center
+			line-height: 1em
+			font-size: 0
+
+			.bars
+				margin:
+					right: 7px
+
+				i
+					display: inline-block
+					background: #fff
+					cursor: pointer
+					height: 14px
+					width: 6px
+
+					&.full
+						background: #ff9800
+
+					&:not(:last-of-type)
+						margin:
+							right: 3px
+
+			.value
+				line-height: 1em
+				font-size: 13px
+				color: #b6b6bf
+
+	.input-line
+		display: block
+		margin:
+			bottom: 27px
+
+		.form-input
+			border: 2px solid #e2e5e8
+			background: rgba( #000, 0 )
+			border-radius: 6px
+			font-size: 18px
+			display: block
+			height: 54px
+			width: 100%
+			padding: 0 18px
+			color: #785777
+
+			&:focus,
+			&.has-value
+				border-color: #785777
+
+		textarea
+			min-height: 135px
+			resize: vertical
+			padding:
+				bottom: 10px !important
+				top: 10px !important
+
+	.btn.btn-submit
+		border-color: #b2a3b4
+		color: #785777
+
+		&:hover
+			color: #fff
+
+	@media (max-width: 450px)
+
+		.input-line
+
+			.form-input
+				font-size: 15px
+				padding: 0 12px
+				height: 44px
+
+// Subscribe Form
+
+.discover-places-form
+	
+	.form-title
+		text-transform: uppercase
+		letter-spacing: .2em
+		text-align: center
+		margin: 0 0 70px
+		line-height: 1em
+		font-size: 72px
+		display: block
+		opacity: .3
+		color: #fff
+
+	.form-inner
+		display: block
+		max-width: 900px
+		margin: 0 auto
+
+	.input-line
+		display: block
+		margin:
+			bottom: 45px
+
+		.input-line-title
+			display: block
+			line-height: 1em
+			font-size: 15px			
+			color: #fff
+			margin:
+				bottom: 17px
+
+		.form-input
+			+apply-placeholder( #fff )
+			background: rgba( #fff, .35 )
+			border-radius: 3px
+			padding: 0 20px
+			font-size: 17px
+			color: darken( $grey-1, 25% )
+			display: block
+			height: 54px
+			width: 100%
+			border: 0
+
+			&:focus,
+			&.has-value
+				+apply-placeholder( $grey-1 )
+				background: #fff
+
+			@media (max-width: 450px)
+				padding: 0 12px
+				font-size: 14px
+				height: 44px
+
+		.select-box
+
+			&:after
+				color: #fff
+
+			&.select-box-open,
+			&.select-box-filled
+
+				&:after
+					color: #9e9e9e
+
+				.form-input
+					color: darken( $grey-1, 25% )
+					background: #fff
+
+			.select-box-options
+				border: 0
+
+			@media (max-width: 450px)
+				display: none
+
+		.html-select-box
+			outline: none
+			background: rgba( #fff, .35 )
+			border-radius: 3px
+			padding: 0 12px
+			font-size: 14px
+			color: #fff
+			display: block
+			height: 44px
+			width: 100%
+			border: 0
+
+			&:focus,
+			&.has-value
+				color: darken( $grey-1, 25% )
+				background: #fff
+
+			@media (min-width: 451px)
+				display: none
+
+	@media (max-width: 1200px)
+
+		.form-title
+			font-size: 56px
+			margin:
+				bottom: 40px
+
+		.form-inner
+			max-width: 850px
+
+		.input-line
+			margin:
+				bottom: 30px
+
+	@media (max-width: 768px)
+
+		.form-title
+			font-size: 42px
+			opacity: .5
+			margin:
+				bottom: 30px
+
+	@media (max-width: 450px)
+
+		.form-title
+			font-size: 28px
+
+// Header Login Form
+
+.header-profile-form
+	position: absolute
+	transition: all 250ms $ease-in-out-quad
+	transform: translate(0, -50px)
+	top: calc(100% + 25px)	
+	background: #f5f5f5
+	visibility: hidden
+	display: block
+	padding: 30px
+	width: 360px
+	right: -36px
+	opacity: 0
+
+	.close-form-btn
+		position: absolute
+		display: inline-block
+		cursor: pointer
+		height: 16px
+		width: 16px
+		right: 18px
+		top: 18px
+
+		&:before,
+		&:after
+			content: ""
+			transition: all 200ms $ease-in-out-quad
+			background: #969696
+			position: absolute
+			width: 100%
+			height: 1px
+			left: 50%
+			top: 50%
+
+		&:before
+			transform: translate(-50%, -50%) rotate(-45deg)
+
+		&:after
+			transform: translate(-50%, -50%) rotate(45deg)
+
+		&:hover
+
+			&:before,
+			&:after
+				background: darken( #969696, 30% )
+
+	.form-title
+		text-transform: uppercase
+		letter-spacing: .2em
+		text-align: center
+		line-height: 1em
+		color: #757575
+		margin: 0 0 30px
+
+	.input-line
+		position: relative
+		display: block
+
+		&:not(:last-of-type)
+			margin:
+				bottom: -1px
+
+		&:first-of-type
+
+			.form-input
+				border-top-left-radius: 4px
+				border-top-right-radius: 4px
+
+		&:last-of-type
+
+			.form-input
+				border-bottom-left-radius: 4px
+				border-bottom-right-radius: 4px
+
+		> i
+			transition: all 200ms $ease-in-out-quad
+			position: absolute
+			font-size: 20px
+			color: #cdcdcd
+			z-index: 2
+			left: 20px
+			top: 16px
+
+		.form-input
+			display: block
+			+apply-placeholder( #757575 )
+			text-transform: uppercase
+			border: 1px solid #e0e0e0
+			position: relative
+			background: #fff
+			font-size: 13px
+			height: 54px
+			width: 100%
+			padding:
+				right: 15px
+				left: 60px
+
+			&:focus,
+			&.has-value
+				border-color: #785777
+				z-index: 2
+
+				+ i
+					color: darken( #cdcdcd, 30% )
+
+		&:last-of-type
+			margin:
+				bottom: 27px
+
+	.btn.btn-submit
+		display: block
+		width: 100%
+
+	p
+		line-height: 1em
+		padding:
+			top: 10px
+		margin: 0
+		color: #b6b6bf
+
+		a
+
+			&:hover
+				color: darken( #b6b6bf, 15% )
+
+	&.form-visible
+		transform: translate(0, 0)
+		visibility: visible
+		opacity: 1
+
+// Select Boxes
+
+.select-box
+	position: relative
+
+	&:after
+		+icon( e90b )
+		transition: all 200ms $ease-in-out-quad
+		transform: translate(0, -50%)
+		display: inline-block
+		pointer-events: none
+		position: absolute
+		color: #9e9e9e
+		right: 10px
+		top: 50%
+
+	.select-box-input
+		+apply-placeholder( #9e9e9e )
+		border: 2px solid #f1f1f3
+		border-radius: 4px
+		line-height: 50px
+		min-width: 260px
+		font-size: 18px
+		padding: 0 18px
+		cursor: pointer
+		display: block
+		background: 0
+		height: 54px
+		color: darken( #9e9e9e, 20% )
+
+		&:focus
+			border-bottom-right-radius: 0 !important
+			border-bottom-left-radius: 0 !important
+
+		&:focus,
+		&.has-value
+			border-color: lighten( #6b6b6b, 15% )
+
+	.select-box-options
+		position: absolute
+		transform: scaleY(0)
+		transform-origin: 0% 0%
+		transition: all 300ms $ease-in-out-quad
+		border: 2px solid lighten( #6b6b6b, 15% )
+		border-bottom-right-radius: 4px
+		border-bottom-left-radius: 4px
+		background: #fff
+		padding: 10px 0
+		border-top: 0
+		z-index: 2
+		top: 100%
+		right: 0
+		left: 0
+
+		li
+			transition: all 200ms $ease-in-out-quad
+			transform: translate(0, -50%)
+			padding: 10px 18px
+			line-height: 1em
+			font-size: 16px
+			cursor: pointer
+			opacity: 0
+
+			@for $i from 1 to 9
+				&:nth-child(#{$i})
+					transition-delay: 50ms * $i
+
+			&:hover
+				background: #eceff1
+
+		&:hover
+
+			li
+				transition-delay: 0s !important
+
+	&.select-box-open
+
+		&:after
+			transform: translate(0, -50%) rotateX(-180deg)
+
+		.select-box-options
+			transform: scaleY(1)
+
+			li
+				transform: translate(0, 0)
+				opacity: 1
+
+	@media (max-width: 400px)
+
+		.select-box-input
+			min-width: 200px

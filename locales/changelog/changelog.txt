@@ -1,0 +1,34 @@
+Version 1.0.8 - Fixes: 27.03.2017
+================================================
+Added:		Small fixes
+
+Version 1.0.7 - Fixes: 21.03.2017
+================================================
+Added:		Custom Locations facilities
+
+Version 1.0.6 - Fixes: 23.01.2017
+================================================
+FIXED:		Demo options file name
+Added:		Custom Link for Location Category 
+
+Version 1.0.5 - Fixes: 09.01.2017
+================================================
+FIXED:		Single Location rating calculator
+
+Version 1.0.4 - Fixes: 26.12.2016
+================================================
+FIXED:		iPad Pro Responsiveness
+
+Version 1.0.3 - Fixes: 23.12.2016
+================================================
+ADDED:	Google Maps API key input field.
+
+Version 1.0.2 - Fixes: 22.12.2016
+================================================
+FIXED:	AJAX response function missing argument.
+
+Version 1.0.1 - Improvements: 21.12.2016
+================================================
+
+Version 1.0.0 - Initial Release: 20.12.2016
+================================================

@@ -1,0 +1,45 @@
+.theme-banner
+	position: relative
+	display: block
+
+	.banner-image
+
+		img
+			display: block
+			width: 100%
+
+		@media (max-width: 991px)
+			position: absolute
+			height: 100%
+			width: 100%
+			z-index: 1
+			left: 0
+			top: 0
+
+			img
+				object-fit: cover
+				height: 100%
+
+	.banner-content
+		position: relative
+		text-align: center
+		display: block
+		z-index: 2
+
+		@media (max-width: 991px)
+			padding: 60px 0
+
+		@media (min-width: 992px)
+			transform: translate(0, -50%)
+			position: absolute
+			right: 0
+			top: 50%
+			left: 0
+
+		.banner-text
+			text-transform: uppercase
+			letter-spacing: .05em
+			line-height: 2em
+			margin: 0 0 40px
+			font-size: 18px
+			color: #fff

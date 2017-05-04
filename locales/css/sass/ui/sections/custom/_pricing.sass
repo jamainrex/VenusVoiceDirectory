@@ -1,0 +1,72 @@
+.section-pricing
+	padding:
+		bottom: 65px
+
+// Pricing Tables
+
+.pricing-table
+	transition: all 300ms $ease-in-out-quad
+	display: block
+	border: 2px solid #bdbdbd
+
+	.table-header
+		padding: 55px 25px 35px
+		text-align: center
+		line-height: 1em
+
+		.title
+			text-transform: uppercase
+			letter-spacing: .05em
+			line-height: 1em
+			font-size: 18px
+			margin: 0 0 15px
+			color: #616161
+
+		.pricing
+			position: relative
+			letter-spacing: .05em
+			line-height: .7em
+			font-size: 54px
+			color: #616161
+
+			sup
+				transform: translate(-100%, 0)
+				position: absolute
+				letter-spacing: 0em
+				line-height: 1em
+				font-size: 18px
+				margin: 0
+				left: -1px
+				top: 12px
+
+	.table-body
+		border:
+			top: 1px solid #e2e5e8
+
+		.table-features
+			text-align: center
+			min-height: 187px
+			line-height: 1em
+			font-size: 18px
+			color: #616161
+
+			li
+				display: block
+				padding: 14px
+
+				&:not(:last-of-type)
+					border:
+						bottom: 1px solid #e2e5e8
+
+	.table-footer
+		text-align: center
+		padding: 35px 20px 50px
+
+	&:hover
+		box-shadow: 0 0 8px 0 rgba(#000, .2)
+		border-color: #fff
+		background: #fff
+
+	@media (max-width: 991px)
+		margin:
+			bottom: 30px

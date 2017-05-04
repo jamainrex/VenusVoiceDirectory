@@ -1,0 +1,32 @@
+ul.page-numbers
+	+clean-list
+	display: block
+	padding: 0 10px
+	line-height: 1em
+	font-size: 0
+	border:
+		bottom: 3px solid #d8d8d8
+
+	li
+		position: relative
+		z-index: 2
+		display: inline-block
+		line-height: 1em
+		font-size: 13px
+		margin:
+			bottom: -3px
+
+		.page-numbers
+			display: inline-block
+			padding: 0 20px 20px
+			border:
+				bottom: 3px solid rgba( #000, 0 )
+
+			&.current
+				border-color: #00897b
+				color: #00897b
+
+			&:not(.current)
+
+				&:hover
+					color: #00897b

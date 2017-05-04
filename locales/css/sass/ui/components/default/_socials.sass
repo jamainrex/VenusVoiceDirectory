@@ -1,0 +1,124 @@
+.social-list
+
+	a
+
+		i
+			color: #fff
+
+			&.icon-facebook
+				color: $social-color-facebook
+			&.icon-twitter
+				color: $social-color-twitter
+			&.icon-google-plus,
+			&.icon-google
+				color: $social-color-google-plus
+			&.icon-linkedin
+				color: $social-color-linkedin
+			&.icon-vk
+				color: $social-color-vk
+			&.icon-dribbble
+				color: $social-color-dribbble
+			&.icon-flickr
+				color: $social-color-flickr
+			&.icon-youtube
+				color: $social-color-youtube
+			&.icon-pinterest
+				color: $social-color-pinterest
+			&.icon-instagram
+				color: $social-color-instagram
+			&.icon-rss
+				color: $social-color-rss
+
+// Social Block Styling
+
+.social-block
+
+	ul
+		pointer-events: none
+		line-height: 1em
+		font-size: 0
+
+		li
+			transition: all 230ms $ease-in-out-quad
+			backface-visibility: hidden
+			display: inline-block
+			pointer-events: all
+			border-radius: 50%
+
+			i
+				display: inline-block
+				border-radius: 50%
+				vertical-align: middle
+				text-align: center
+				line-height: 40px
+				font-size: 12px
+				height: 40px
+				width: 40px
+				background: currentColor
+
+				&:before
+					color: #fff
+
+			&:not(:last-of-type)
+				margin:
+					right: 20px
+
+		&:hover
+
+			li
+				opacity: .5
+
+				&:hover
+					opacity: 1
+
+	@media (max-width: 450px)
+
+		ul
+
+			li
+
+				i
+					line-height: 32px
+					font-size: 11px
+					height: 32px
+					width: 32px
+
+				&:not(:last-of-type)
+					margin:
+						right: 12px
+
+// Share Block Styling
+
+.share-block
+	text-align: center
+	line-height: 1em
+	font-size: 0
+	padding:
+		top: 15px
+
+	li
+		transition: all 200ms $ease-in-out-quad
+		pointer-events: all
+		display: inline-block
+
+		&:not(:last-of-type)
+			margin:
+				right: 12px
+
+		i
+			border: 2px solid currentColor
+			vertical-align: middle
+			text-align: center
+			border-radius: 50%
+			line-height: 24px
+			font-size: 12px
+			height: 28px
+			width: 28px
+
+	&:hover
+
+		li
+			opacity: .5
+
+			&:hover
+				opacity: 1

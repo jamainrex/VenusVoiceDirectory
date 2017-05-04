@@ -1,0 +1,1599 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Locales\n"
+"POT-Creation-Date: 2016-12-02 15:28+0200\n"
+"PO-Revision-Date: 2016-12-02 15:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: Teslathemes <hi@teslathemes.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;esc_attr__;esc_attr_e;esc_html__;"
+"esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:5
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:6
+msgid "the page was not found"
+msgstr ""
+
+#: 404.php:8
+msgid "Back home"
+msgstr ""
+
+#: archive.php:24 archive.php:26 archive.php:28
+msgid "Archive: "
+msgstr ""
+
+#: archive.php:30
+msgid "Archive"
+msgstr ""
+
+#: archive.php:39 category.php:29 home.php:28 index.php:12 tag.php:29
+msgid "Sorry, there are no posts to show."
+msgstr ""
+
+#: category.php:22
+msgid "Category: "
+msgstr ""
+
+#: comments-location.php:8 comments.php:8
+msgid "Comments"
+msgstr ""
+
+#: comments-location.php:15 comments.php:15
+msgid ""
+"This post is password protected. Enter the password to view any comments "
+msgstr ""
+
+#: footer.php:21 widgets/subscriber.php:28
+msgid "Newsletter subscribe"
+msgstr ""
+
+#: footer.php:24 widgets/subscriber.php:31
+msgid "Enter your email address"
+msgstr ""
+
+#: footer.php:67
+msgid "Copyright "
+msgstr ""
+
+#: footer.php:67 header-explore.php:6 header.php:6 theme_config/tt-map.php:232
+#: theme_config/tt-map.php:314 theme_config/tt-map.php:438
+#: theme_config/tt-map.php:494 theme_config/tt-map.php:561
+#: theme_config/tt-map.php:614 theme_config/tt-map.php:685
+msgid "TeslaThemes"
+msgstr ""
+
+#: footer.php:67
+msgid "Supported by "
+msgstr ""
+
+#: footer.php:67
+msgid "WPmatic"
+msgstr ""
+
+#: functions.php:180
+msgid " ..."
+msgstr ""
+
+#: functions.php:229
+msgid "No Share"
+msgstr ""
+
+#: functions.php:270
+msgid "reply"
+msgstr ""
+
+#: functions.php:460 functions.php:745
+msgid "The passwords do not match."
+msgstr ""
+
+#: functions.php:461
+msgid "Please write a new password."
+msgstr ""
+
+#: functions.php:467
+msgid "This email is not valid."
+msgstr ""
+
+#: functions.php:470
+msgid "This email is already used."
+msgstr ""
+
+#: functions.php:476
+msgid "Username is used."
+msgstr ""
+
+#: functions.php:479
+msgid "Invalid username."
+msgstr ""
+
+#: functions.php:494
+msgid "Successfully registered."
+msgstr ""
+
+#: functions.php:513
+msgid "Agent"
+msgstr ""
+
+#: functions.php:622
+msgid "Successfully submitted"
+msgstr ""
+
+#: functions.php:641
+msgid "nothing changed"
+msgstr ""
+
+#: functions.php:645
+msgid "added"
+msgstr ""
+
+#: functions.php:648
+msgid "removed"
+msgstr ""
+
+#: functions.php:666 functions.php:688
+msgid "Failed"
+msgstr ""
+
+#: functions.php:668 functions.php:692
+msgid "Removed"
+msgstr ""
+
+#: functions.php:722
+msgid "The email you entered is not valid."
+msgstr ""
+
+#: functions.php:724
+msgid "This email is already used by another user.  try a different one."
+msgstr ""
+
+#: functions.php:737
+msgid "Successfully updated"
+msgstr ""
+
+#: functions.php:746
+msgid "Please add new password."
+msgstr ""
+
+#: header-explore.php:23
+msgid "Choose type"
+msgstr ""
+
+#: header-explore.php:26 header-explore.php:41 page-explore.php:40
+#: page-explore.php:58 templates/shortcodes/tt_intro_box.php:34
+#: templates/shortcodes/tt_intro_box.php:53
+msgid "ALL"
+msgstr ""
+
+#: header-explore.php:38 page-dashboard.php:391
+#: templates/shortcodes/tt_intro_box.php:30
+msgid "Location"
+msgstr ""
+
+#: header-explore.php:73 header.php:36
+msgid "Log in"
+msgstr ""
+
+#: header-explore.php:74 header-explore.php:103 header-explore.php:135
+#: header-explore.php:216 header-explore.php:248 header-explore.php:270
+#: header.php:37 header.php:66 header.php:98 header.php:175 header.php:207
+#: header.php:229
+msgid "Register"
+msgstr ""
+
+#: header-explore.php:80 header-explore.php:92 header-explore.php:254
+#: header-explore.php:266 header.php:43 header.php:55 header.php:213
+#: header.php:225
+msgid "Login"
+msgstr ""
+
+#: header-explore.php:83 header-explore.php:120 header-explore.php:233
+#: header-explore.php:257 header.php:46 header.php:83 header.php:192
+#: header.php:216
+msgid "Username"
+msgstr ""
+
+#: header-explore.php:88 header-explore.php:125 header-explore.php:238
+#: header-explore.php:262 header.php:51 header.php:88 header.php:197
+#: header.php:221
+msgid "Password"
+msgstr ""
+
+#: header-explore.php:96 header-explore.php:270 header-explore.php:276
+#: header.php:59 header.php:229 header.php:235
+msgid "Forgot your your password?"
+msgstr ""
+
+#: header-explore.php:106 header-explore.php:219 header.php:69 header.php:178
+msgid "First name"
+msgstr ""
+
+#: header-explore.php:110 header-explore.php:223 header.php:73 header.php:182
+msgid "Last name"
+msgstr ""
+
+#: header-explore.php:115 header-explore.php:228 header.php:78 header.php:187
+#: page-dashboard.php:211
+msgid "E-mail"
+msgstr ""
+
+#: header-explore.php:130 header-explore.php:242 header.php:93 header.php:201
+msgid "Confirm Password"
+msgstr ""
+
+#: header-explore.php:142 header.php:105
+msgid "Forgot password?"
+msgstr ""
+
+#: header-explore.php:145 header-explore.php:279 header.php:108 header.php:238
+msgid "Username or E-mail"
+msgstr ""
+
+#: header-explore.php:149 header-explore.php:283 header.php:112 header.php:242
+msgid "Recover password"
+msgstr ""
+
+#: header-explore.php:158 header-explore.php:292 header.php:121 header.php:251
+msgid "My Dashboard"
+msgstr ""
+
+#: header-explore.php:195 header.php:154 templates/searchform.php:5
+#: templates/shortcodes/tt_intro_box.php:94
+msgid "Search"
+msgstr ""
+
+#: header-explore.php:249 header.php:208
+msgid "Already have an account? "
+msgstr ""
+
+#: header-explore.php:249 header-explore.php:285 header.php:208 header.php:244
+msgid "Sign in"
+msgstr ""
+
+#: page-dashboard.php:34
+msgid "Dashboard"
+msgstr ""
+
+#: page-dashboard.php:39 page-dashboard.php:73
+msgid "My listing"
+msgstr ""
+
+#: page-dashboard.php:44
+msgid "Favourites"
+msgstr ""
+
+#: page-dashboard.php:49
+msgid "Edit profile"
+msgstr ""
+
+#: page-dashboard.php:54 page-dashboard.php:111 page-dashboard.php:153
+msgid "Add your listing"
+msgstr ""
+
+#: page-dashboard.php:64
+msgid "Hello"
+msgstr ""
+
+#: page-dashboard.php:65
+msgid ""
+"from your account dashboard you can view your listings &amp; your "
+"favourities edit your password &amp; account details"
+msgstr ""
+
+#: page-dashboard.php:67
+msgid "Not"
+msgstr ""
+
+#: page-dashboard.php:67 page-dashboard.php:250
+msgid "Sign out"
+msgstr ""
+
+#: page-dashboard.php:83 page-dashboard.php:146
+msgid "You do not have any listings yet."
+msgstr ""
+
+#: page-dashboard.php:92
+msgid "My favourites"
+msgstr ""
+
+#: page-dashboard.php:102 page-dashboard.php:187
+msgid "You do not have any favourite listings yet."
+msgstr ""
+
+#: page-dashboard.php:121 page-dashboard.php:164
+msgid "Location title"
+msgstr ""
+
+#: page-dashboard.php:122
+msgid "Date posted"
+msgstr ""
+
+#: page-dashboard.php:139 page-dashboard.php:180
+msgid "Delete"
+msgstr ""
+
+#: page-dashboard.php:201
+msgid "First Name"
+msgstr ""
+
+#: page-dashboard.php:206
+msgid "Last Name"
+msgstr ""
+
+#: page-dashboard.php:216 page-dashboard.php:420
+msgid "Phone"
+msgstr ""
+
+#: page-dashboard.php:223
+msgid "Password change"
+msgstr ""
+
+#: page-dashboard.php:229
+msgid "New password"
+msgstr ""
+
+#: page-dashboard.php:234
+msgid "Confirm new password"
+msgstr ""
+
+#: page-dashboard.php:241 page-dashboard.php:465
+msgid "Save"
+msgstr ""
+
+#: page-dashboard.php:249
+msgid "You are currently signed in as"
+msgstr ""
+
+#: page-dashboard.php:258
+msgid "Listing name"
+msgstr ""
+
+#: page-dashboard.php:264 theme_config/tt-map.php:519
+msgid "Category"
+msgstr ""
+
+#: page-dashboard.php:278
+msgid "Description"
+msgstr ""
+
+#: page-dashboard.php:286
+msgid "Listing tags"
+msgstr ""
+
+#: page-dashboard.php:290
+msgid "Add tag"
+msgstr ""
+
+#: page-dashboard.php:295
+msgid ""
+"Visitors can filter their search by the amenities too, so make sure you "
+"include all the relevant ones."
+msgstr ""
+
+#: page-dashboard.php:303
+msgid "Add a price range"
+msgstr ""
+
+#: page-dashboard.php:317
+msgid "Location facilities"
+msgstr ""
+
+#: page-dashboard.php:325
+msgid "Indoor Activities"
+msgstr ""
+
+#: page-dashboard.php:334 theme_config/slider-options.php:127
+msgid "Chef's specials"
+msgstr ""
+
+#: page-dashboard.php:343 theme_config/slider-options.php:119
+msgid "Drinks served"
+msgstr ""
+
+#: page-dashboard.php:352 theme_config/slider-options.php:131
+msgid "Live music"
+msgstr ""
+
+#: page-dashboard.php:361 theme_config/slider-options.php:123
+msgid "Entertainment program"
+msgstr ""
+
+#: page-dashboard.php:370
+msgid "Gallery images"
+msgstr ""
+
+#: page-dashboard.php:372
+msgid "(+ Add photos)"
+msgstr ""
+
+#: page-dashboard.php:393
+msgid "NY, Manhattan"
+msgstr ""
+
+#: page-dashboard.php:408
+msgid "Working hours"
+msgstr ""
+
+#: page-dashboard.php:424
+msgid "Email"
+msgstr ""
+
+#: page-dashboard.php:425
+msgid "hi@teslathemes.com"
+msgstr ""
+
+#: page-dashboard.php:429
+msgid "Twitter username"
+msgstr ""
+
+#: page-dashboard.php:430 page-dashboard.php:435 page-dashboard.php:441
+#: page-dashboard.php:442 page-dashboard.php:443 page-dashboard.php:444
+msgid "https://"
+msgstr ""
+
+#: page-dashboard.php:434
+msgid "Facebook url"
+msgstr ""
+
+#: page-dashboard.php:439
+msgid "Other Platforms"
+msgstr ""
+
+#: page-dashboard.php:441
+msgid "Pinterest"
+msgstr ""
+
+#: page-dashboard.php:442
+msgid "Instagram"
+msgstr ""
+
+#: page-dashboard.php:443
+msgid "Google+"
+msgstr ""
+
+#: page-dashboard.php:444
+msgid "Youtube"
+msgstr ""
+
+#: page-dashboard.php:452
+msgid "Add link on website"
+msgstr ""
+
+#: page-dashboard.php:456
+msgid "Website URL"
+msgstr ""
+
+#: page-dashboard.php:474
+msgid "Sorry,"
+msgstr ""
+
+#: page-dashboard.php:475
+msgid "You have to be logged in to view this page."
+msgstr ""
+
+#: page-explore.php:70
+msgid "Price range:"
+msgstr ""
+
+#: page-explore.php:132
+msgid "Choose tags:"
+msgstr ""
+
+#: page-offers.php:65
+msgid "See more"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:399
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3034
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:400
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:524
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:525
+msgid "Update Required"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:639
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:833
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3443
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:940
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:940
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:943
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:943
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:1886
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2172
+msgid "Required"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2175
+msgid "Recommended"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2191
+msgid "WordPress Repository"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2194
+msgid "External Source"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2197
+msgid "Pre-Packaged"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2214
+msgid "Not Installed"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2218
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2220
+msgid "Active"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2226
+msgid "Required Update not Available"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2229
+msgid "Requires Update"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2232
+msgid "Update recommended"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2240
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2376
+msgid "unknown"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2384
+msgid "Installed version:"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2392
+msgid "Minimum required version:"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2404
+msgid "Available version:"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2427
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2441
+msgid "Plugin"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2442
+msgid "Source"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2443
+#: templates/shortcodes/tt_intro_box.php:66
+msgid "Type"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2447
+msgid "Version"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2448
+msgid "Status"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2496
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2500
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2505
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2575
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2608
+msgid "Install"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2614
+msgid "Update"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2617
+msgid "Activate"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2648
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2650
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2686
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2688
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2793
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:2819
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3033
+msgid "Plugin activation failed."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3367
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3369
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3374
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3375
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3375
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3381
+msgid "Show Details"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3375
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3381
+msgid "Hide Details"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3376
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3377
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3380
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3381
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3382
+msgid "All installations have been completed."
+msgstr ""
+
+#: plugins/tgm-plugin-activation/class-tgm-plugin-activation.php:3383
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: search.php:22
+msgid "Search results."
+msgstr ""
+
+#: search.php:29
+msgid "Sorry, nothing found for:  "
+msgstr ""
+
+#: single.php:41 templates/content.php:3
+msgid "Author: "
+msgstr ""
+
+#: single.php:67
+msgid "Categories"
+msgstr ""
+
+#: single.php:71
+msgid "Tags"
+msgstr ""
+
+#: tag.php:22
+msgid "Tag: "
+msgstr ""
+
+#: templates/content.php:22
+msgid "Read more"
+msgstr ""
+
+#: templates/shortcodes/params/google_map.php:8 theme_config/google_map.php:7
+msgid "Remove markers"
+msgstr ""
+
+#: templates/shortcodes/tt_intro_box.php:23
+msgid "What are you looking for?"
+msgstr ""
+
+#: templates/shortcodes/tt_intro_box.php:32
+#: templates/shortcodes/tt_intro_box.php:52
+msgid "Choose location"
+msgstr ""
+
+#: templates/shortcodes/tt_intro_box.php:68
+#: templates/shortcodes/tt_intro_box.php:80
+msgid "Choose the type"
+msgstr ""
+
+#: templates/shortcodes/tt_location_categories.php:11
+msgid "place"
+msgstr ""
+
+#: templates/shortcodes/tt_location_categories.php:11
+msgid "places"
+msgstr ""
+
+#: templates/shortcodes/tt_location_slider.php:87
+#: templates/shortcodes/tt_location_slider.php:142
+msgid "No Description"
+msgstr ""
+
+#: templates/shortcodes/tt_location_slider.php:102
+msgid "View"
+msgstr ""
+
+#: templates/shortcodes/tt_popular_locations.php:48
+msgid "There are no locations to display at this moment."
+msgstr ""
+
+#: templates/shortcodes/tt_theme_banner.php:12
+msgid "No Background image selected. Please select one."
+msgstr ""
+
+#: theme_config/slider-options.php:115
+msgid "Indoor activities"
+msgstr ""
+
+#: theme_config/subscription.php:6
+msgid "Please insert email"
+msgstr ""
+
+#: theme_config/subscription.php:8
+msgid "Invalid Email"
+msgstr ""
+
+#: theme_config/subscription.php:23
+msgid "Date"
+msgstr ""
+
+#: theme_config/subscription.php:24
+msgid "No data received"
+msgstr ""
+
+#: theme_config/subscription.php:25
+msgid "Error writing to disk"
+msgstr ""
+
+#: theme_config/subscription.php:26
+msgid "Successfully Subscribed"
+msgstr ""
+
+#: theme_config/subscription.php:27
+msgid "Couldn't write to file"
+msgstr ""
+
+#: theme_config/tt-map.php:16
+msgid "Blue"
+msgstr ""
+
+#: theme_config/tt-map.php:17
+msgid "Turquoise"
+msgstr ""
+
+#: theme_config/tt-map.php:18
+msgid "Pink"
+msgstr ""
+
+#: theme_config/tt-map.php:19
+msgid "Violet"
+msgstr ""
+
+#: theme_config/tt-map.php:20
+msgid "Peacoc"
+msgstr ""
+
+#: theme_config/tt-map.php:21
+msgid "Chino"
+msgstr ""
+
+#: theme_config/tt-map.php:22
+msgid "Mulled Wine"
+msgstr ""
+
+#: theme_config/tt-map.php:23
+msgid "Vista Blue"
+msgstr ""
+
+#: theme_config/tt-map.php:24
+msgid "Black"
+msgstr ""
+
+#: theme_config/tt-map.php:25
+msgid "Orange"
+msgstr ""
+
+#: theme_config/tt-map.php:26
+msgid "Sky"
+msgstr ""
+
+#: theme_config/tt-map.php:27
+msgid "Green"
+msgstr ""
+
+#: theme_config/tt-map.php:28
+msgid "Juicy pink"
+msgstr ""
+
+#: theme_config/tt-map.php:29
+msgid "Sandy brown"
+msgstr ""
+
+#: theme_config/tt-map.php:30
+msgid "Purple"
+msgstr ""
+
+#: theme_config/tt-map.php:31
+msgid "White"
+msgstr ""
+
+#: theme_config/tt-map.php:60 theme_config/tt-map.php:76
+msgid "Icon library"
+msgstr ""
+
+#: theme_config/tt-map.php:62 theme_config/tt-map.php:78
+msgid "Font Awesome"
+msgstr ""
+
+#: theme_config/tt-map.php:63 theme_config/tt-map.php:79
+msgid "Open Iconic"
+msgstr ""
+
+#: theme_config/tt-map.php:64 theme_config/tt-map.php:80
+msgid "Typicons"
+msgstr ""
+
+#: theme_config/tt-map.php:65 theme_config/tt-map.php:81
+msgid "Entypo"
+msgstr ""
+
+#: theme_config/tt-map.php:66 theme_config/tt-map.php:82
+msgid "Linecons"
+msgstr ""
+
+#: theme_config/tt-map.php:71 theme_config/tt-map.php:86
+msgid "Select icon library."
+msgstr ""
+
+#: theme_config/tt-map.php:94 theme_config/tt-map.php:111
+#: theme_config/tt-map.php:127 theme_config/tt-map.php:143
+#: theme_config/tt-map.php:158 theme_config/tt-map.php:174
+msgid "Icon"
+msgstr ""
+
+#: theme_config/tt-map.php:107 theme_config/tt-map.php:123
+#: theme_config/tt-map.php:139 theme_config/tt-map.php:170
+#: theme_config/tt-map.php:186
+msgid "Select icon from library."
+msgstr ""
+
+#: theme_config/tt-map.php:197
+msgid "Show Title?"
+msgstr ""
+
+#: theme_config/tt-map.php:199
+msgid "If checked Title will be shown at top"
+msgstr ""
+
+#: theme_config/tt-map.php:200 theme_config/tt-map.php:246
+#: theme_config/tt-map.php:291 theme_config/tt-map.php:328
+#: theme_config/tt-map.php:459 theme_config/tt-map.php:582
+#: theme_config/tt-map.php:589 theme_config/tt-map.php:596
+msgid "Yes"
+msgstr ""
+
+#: theme_config/tt-map.php:204
+msgid "Section title"
+msgstr ""
+
+#: theme_config/tt-map.php:207
+msgid "Set Section title"
+msgstr ""
+
+#: theme_config/tt-map.php:215
+msgid "Choose section style"
+msgstr ""
+
+#: theme_config/tt-map.php:217
+msgid "Select style type."
+msgstr ""
+
+#: theme_config/tt-map.php:219
+msgid "Light"
+msgstr ""
+
+#: theme_config/tt-map.php:220
+msgid "Dark"
+msgstr ""
+
+#: theme_config/tt-map.php:229
+msgid "Popular Locations"
+msgstr ""
+
+#: theme_config/tt-map.php:233
+msgid "Shows a number of Popular Locations"
+msgstr ""
+
+#: theme_config/tt-map.php:237 theme_config/tt-map.php:319
+#: theme_config/tt-map.php:573 theme_config/tt-map.php:682
+#: theme_config/tt-map.php:690
+msgid "Section Title"
+msgstr ""
+
+#: theme_config/tt-map.php:239
+msgid "Default: Most Popular Location"
+msgstr ""
+
+#: theme_config/tt-map.php:243 theme_config/tt-map.php:325
+msgid "Hide the Title"
+msgstr ""
+
+#: theme_config/tt-map.php:245 theme_config/tt-map.php:290
+#: theme_config/tt-map.php:327 theme_config/tt-map.php:458
+#: theme_config/tt-map.php:581 theme_config/tt-map.php:588
+#: theme_config/tt-map.php:595
+msgid "Default: No"
+msgstr ""
+
+#: theme_config/tt-map.php:250
+msgid "Number of Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:252
+msgid "Choose how much posts will be shown."
+msgstr ""
+
+#: theme_config/tt-map.php:254
+msgid "3 Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:255
+msgid "4 Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:256
+msgid "6 Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:257
+msgid "8 Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:258
+msgid "9 Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:259
+msgid "12 Posts"
+msgstr ""
+
+#: theme_config/tt-map.php:265
+msgid "Number of Columns"
+msgstr ""
+
+#: theme_config/tt-map.php:267
+msgid "Default: 3 columns"
+msgstr ""
+
+#: theme_config/tt-map.php:269
+msgid "3 Columns"
+msgstr ""
+
+#: theme_config/tt-map.php:270
+msgid "4 Columns"
+msgstr ""
+
+#: theme_config/tt-map.php:276
+msgid "\"See more\" button text"
+msgstr ""
+
+#: theme_config/tt-map.php:278
+msgid "Default: See more"
+msgstr ""
+
+#: theme_config/tt-map.php:282
+msgid "\"See more\" button LINK"
+msgstr ""
+
+#: theme_config/tt-map.php:284 theme_config/tt-map.php:471
+msgid "Default: #"
+msgstr ""
+
+#: theme_config/tt-map.php:288 theme_config/tt-map.php:456
+msgid "Hide the Button ?"
+msgstr ""
+
+#: theme_config/tt-map.php:295 theme_config/tt-map.php:419
+#: theme_config/tt-map.php:475 theme_config/tt-map.php:666
+#: theme_config/tt-map.php:706
+msgid "Extra class name"
+msgstr ""
+
+#: theme_config/tt-map.php:297 theme_config/tt-map.php:421
+#: theme_config/tt-map.php:477
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: theme_config/tt-map.php:301 theme_config/tt-map.php:425
+#: theme_config/tt-map.php:481 theme_config/tt-map.php:600
+#: theme_config/tt-map.php:672
+msgid "CSS box"
+msgstr ""
+
+#: theme_config/tt-map.php:303 theme_config/tt-map.php:427
+#: theme_config/tt-map.php:483 theme_config/tt-map.php:602
+#: theme_config/tt-map.php:674
+msgid "Design Options"
+msgstr ""
+
+#: theme_config/tt-map.php:311
+msgid "Location Slider"
+msgstr ""
+
+#: theme_config/tt-map.php:315
+msgid "Shows a Slider with location posts"
+msgstr ""
+
+#: theme_config/tt-map.php:321
+msgid "Default: Location Slider Title"
+msgstr ""
+
+#: theme_config/tt-map.php:332
+msgid "Number of Slides"
+msgstr ""
+
+#: theme_config/tt-map.php:334
+msgid "Type a number of slides to be shown. Default: All locations"
+msgstr ""
+
+#: theme_config/tt-map.php:338
+msgid "Offset number of Slides"
+msgstr ""
+
+#: theme_config/tt-map.php:340
+msgid "Type an offset number. Works only if number of posts is set. Default: 0"
+msgstr ""
+
+#: theme_config/tt-map.php:344
+msgid "Slider Style"
+msgstr ""
+
+#: theme_config/tt-map.php:346
+msgid "Default: Style 1"
+msgstr ""
+
+#: theme_config/tt-map.php:348
+msgid "Style 1"
+msgstr ""
+
+#: theme_config/tt-map.php:349
+msgid "Style 2"
+msgstr ""
+
+#: theme_config/tt-map.php:355 theme_config/tt-map.php:388
+msgid "Number of slides on Desktop"
+msgstr ""
+
+#: theme_config/tt-map.php:357 theme_config/tt-map.php:390
+msgid "Default: 3 slides"
+msgstr ""
+
+#: theme_config/tt-map.php:359 theme_config/tt-map.php:376
+#: theme_config/tt-map.php:392 theme_config/tt-map.php:408
+msgid "1 Slides"
+msgstr ""
+
+#: theme_config/tt-map.php:360 theme_config/tt-map.php:377
+#: theme_config/tt-map.php:393 theme_config/tt-map.php:409
+msgid "2 Slides"
+msgstr ""
+
+#: theme_config/tt-map.php:361 theme_config/tt-map.php:378
+#: theme_config/tt-map.php:394
+msgid "3 Slides"
+msgstr ""
+
+#: theme_config/tt-map.php:362
+msgid "4 Slides"
+msgstr ""
+
+#: theme_config/tt-map.php:372 theme_config/tt-map.php:404
+msgid "Number of slides on tablets"
+msgstr ""
+
+#: theme_config/tt-map.php:374 theme_config/tt-map.php:406
+msgid "Default: 2 slides"
+msgstr ""
+
+#: theme_config/tt-map.php:435
+msgid "Theme Banner"
+msgstr ""
+
+#: theme_config/tt-map.php:439
+msgid "Shows a banner for promoting something"
+msgstr ""
+
+#: theme_config/tt-map.php:443 theme_config/tt-map.php:512
+#: theme_config/tt-map.php:566
+msgid "Background"
+msgstr ""
+
+#: theme_config/tt-map.php:445
+msgid "Choose the background image. Size > 1840x476px"
+msgstr ""
+
+#: theme_config/tt-map.php:450
+msgid "Banner Text"
+msgstr ""
+
+#: theme_config/tt-map.php:452
+msgid "Default: Nothing shows up."
+msgstr ""
+
+#: theme_config/tt-map.php:463
+msgid "Button text"
+msgstr ""
+
+#: theme_config/tt-map.php:465
+msgid "Default: Pay Now"
+msgstr ""
+
+#: theme_config/tt-map.php:469
+msgid "Button Link"
+msgstr ""
+
+#: theme_config/tt-map.php:491
+msgid "Location Category"
+msgstr ""
+
+#: theme_config/tt-map.php:495
+msgid "Locations and categories"
+msgstr ""
+
+#: theme_config/tt-map.php:499
+msgid "Style"
+msgstr ""
+
+#: theme_config/tt-map.php:501
+msgid "Small"
+msgstr ""
+
+#: theme_config/tt-map.php:502
+msgid "Small Wide"
+msgstr ""
+
+#: theme_config/tt-map.php:503
+msgid "Normal"
+msgstr ""
+
+#: theme_config/tt-map.php:506
+msgid "Select category style type."
+msgstr ""
+
+#: theme_config/tt-map.php:514
+msgid "Choose the background image. Size bigger than 613x613px and square."
+msgstr ""
+
+#: theme_config/tt-map.php:522
+msgid "Select a category."
+msgstr ""
+
+#: theme_config/tt-map.php:536
+msgid "Icon Color"
+msgstr ""
+
+#: theme_config/tt-map.php:538 theme_config/tt-map.php:544
+#: theme_config/tt-map.php:550
+msgid "Select icon color."
+msgstr ""
+
+#: theme_config/tt-map.php:542
+msgid "Text Color"
+msgstr ""
+
+#: theme_config/tt-map.php:548
+msgid "Initial box Color"
+msgstr ""
+
+#: theme_config/tt-map.php:558
+msgid "Intro Box"
+msgstr ""
+
+#: theme_config/tt-map.php:562
+msgid "An advanced search box with filters."
+msgstr ""
+
+#: theme_config/tt-map.php:568
+msgid "Choose the background image. At least 1920x1080px"
+msgstr ""
+
+#: theme_config/tt-map.php:575
+msgid "Default: if you leave it blank then it is hidden."
+msgstr ""
+
+#: theme_config/tt-map.php:579
+msgid "Hide the title filter ?"
+msgstr ""
+
+#: theme_config/tt-map.php:586
+msgid "Hide the location filter ?"
+msgstr ""
+
+#: theme_config/tt-map.php:593
+msgid "Hide the type filter ?"
+msgstr ""
+
+#: theme_config/tt-map.php:611
+msgid "Pricing Tables"
+msgstr ""
+
+#: theme_config/tt-map.php:615
+msgid "Displays a nice designed pricing table."
+msgstr ""
+
+#: theme_config/tt-map.php:619
+msgid "Title"
+msgstr ""
+
+#: theme_config/tt-map.php:621
+msgid "Give this box a title."
+msgstr ""
+
+#: theme_config/tt-map.php:625
+msgid "Price"
+msgstr ""
+
+#: theme_config/tt-map.php:627
+msgid "Give this box a price."
+msgstr ""
+
+#: theme_config/tt-map.php:631
+msgid "Currency sign"
+msgstr ""
+
+#: theme_config/tt-map.php:633
+msgid "Write a currency sign."
+msgstr ""
+
+#: theme_config/tt-map.php:637
+msgid "Features"
+msgstr ""
+
+#: theme_config/tt-map.php:639
+msgid "Enter a list of features."
+msgstr ""
+
+#: theme_config/tt-map.php:647
+msgid "Feature"
+msgstr ""
+
+#: theme_config/tt-map.php:654
+msgid "Button Text"
+msgstr ""
+
+#: theme_config/tt-map.php:656
+msgid "Text like: \"Buy Now\""
+msgstr ""
+
+#: theme_config/tt-map.php:660
+msgid "Button URL Link"
+msgstr ""
+
+#: theme_config/tt-map.php:662
+msgid "Paste an url link."
+msgstr ""
+
+#: theme_config/tt-map.php:668
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: theme_config/tt-map.php:686
+msgid "Tesla Section Title"
+msgstr ""
+
+#: theme_config/tt-map.php:693
+msgid "This is custom heading title"
+msgstr ""
+
+#: theme_config/tt-map.php:698
+msgid "Section Description"
+msgstr ""
+
+#: theme_config/tt-map.php:701
+msgid "This is a custom heading description"
+msgstr ""
+
+#: theme_config/tt-map.php:708
+msgid ""
+"Style particular content element differently - add a existing class name "
+"(black, white, hero-section) or another custom class from CSS."
+msgstr ""
+
+#: theme_config/tt-map.php:713
+msgid "Css"
+msgstr ""
+
+#: theme_config/tt-map.php:715
+msgid "Design options"
+msgstr ""
+
+#: theme_config/views/contact_form/email.php:4
+#: theme_config/views/contact_form/text.php:4
+#: theme_config/views/contact_form/textarea.php:4
+msgid "*"
+msgstr ""
+
+#: theme_config/views/contact_form/submit.php:3
+msgid "Send message"
+msgstr ""
+
+#: theme_config/views/contact_form/submit.php:4
+msgid "Sending Message"
+msgstr ""
+
+#: theme_config/views/contact_form/submit.php:5
+msgid "Message Successfully Sent"
+msgstr ""
+
+#: theme_config/views/contact_form/submit.php:6
+msgid "Unable to send message"
+msgstr ""
+
+#: widgets/contact_info.php:8
+msgid "[Locales] Socials and contacts"
+msgstr ""
+
+#: widgets/contact_info.php:9
+msgid "This widget gives you the ability to show the Follow Me Links"
+msgstr ""
+
+#: widgets/contact_info.php:24 widgets/contact_info.php:94
+#: widgets/location-contacts.php:37
+msgid "Phone:"
+msgstr ""
+
+#: widgets/contact_info.php:27 widgets/location-contacts.php:40
+msgid "Mail:"
+msgstr ""
+
+#: widgets/contact_info.php:30 widgets/location-contacts.php:43
+msgid "Working hours:"
+msgstr ""
+
+#: widgets/contact_info.php:71 widgets/location-contacts.php:103
+#: widgets/location_map.php:223 widgets/popular_posts.php:50
+#: widgets/related_locations.php:123
+msgid "New title"
+msgstr ""
+
+#: widgets/contact_info.php:76
+msgid "Your Phone Number"
+msgstr ""
+
+#: widgets/contact_info.php:81
+msgid "Type an Email"
+msgstr ""
+
+#: widgets/contact_info.php:86
+msgid "08:00 - 17:00"
+msgstr ""
+
+#: widgets/contact_info.php:90 widgets/location-contacts.php:107
+#: widgets/location_map.php:227 widgets/popular_posts.php:55
+#: widgets/related_locations.php:129 widgets/subscriber.php:50
+msgid "Title:"
+msgstr ""
+
+#: widgets/contact_info.php:98
+msgid "Email:"
+msgstr ""
+
+#: widgets/contact_info.php:102
+msgid "Working Hours:"
+msgstr ""
+
+#: widgets/location-contacts.php:8
+msgid "[Locales] Location Contact Info"
+msgstr ""
+
+#: widgets/location-contacts.php:9
+msgid "This widget gives you the ability to show the location info"
+msgstr ""
+
+#: widgets/location_map.php:8
+msgid "[Locales] Location MAP"
+msgstr ""
+
+#: widgets/location_map.php:9
+msgid "This widget gives you the ability to show the location on the map"
+msgstr ""
+
+#: widgets/popular_posts.php:7
+msgid "[Locales] Popular Posts"
+msgstr ""
+
+#: widgets/popular_posts.php:8
+msgid ""
+"This widget gives you the ability to show the most popular posts by views"
+msgstr ""
+
+#: widgets/popular_posts.php:36
+msgid " ago"
+msgstr ""
+
+#: widgets/popular_posts.php:59 widgets/related_locations.php:133
+msgid "Number of Posts:"
+msgstr ""
+
+#: widgets/related_locations.php:7
+msgid "[Locales] Similar Locations"
+msgstr ""
+
+#: widgets/related_locations.php:8
+msgid "This widget gives you the ability to show some similar locations"
+msgstr ""
+
+#: widgets/related_locations.php:66 widgets/related_locations.php:111
+msgid "No similar posts for a moment"
+msgstr ""
+
+#: widgets/related_locations.php:137
+msgid "Similar by:"
+msgstr ""
+
+#: widgets/subscriber.php:10
+msgid "Subscribe Box Widget."
+msgstr ""

@@ -1,0 +1,219 @@
+.services-block
+	margin:
+		bottom: 160px
+
+	@media (max-width: 1200px)
+		margin:
+			bottom: 120px
+
+	@media (max-width: 450px)
+		margin:
+			bottom: 70px
+
+// Single Service Block
+.service-block
+	position: relative
+
+	&:before
+		content: ""
+		display: block
+		padding:
+			top: 100%
+
+	&.color-1
+		.service-block-info
+			background: #d7dbdf
+
+	&.color-2
+		.service-block-info
+			background: #b1beca
+
+	&.color-3
+		.service-block-info
+			background: #785777
+
+	&.color-4
+		.service-block-info
+			background: #f26f72
+
+	&.color-5
+		.service-block-info
+			background: #d7c7c3
+
+	&.small
+
+		.service-block-inner
+
+			.block-info-inner
+				flex-direction: column-reverse
+
+			.title
+				text-align: center
+				font-size: 13px
+				margin: 25px 0 0
+
+			.icon
+				font-size: 60px
+
+			.nr-of-places
+				display: none
+
+	&.wide
+
+		&:before
+			padding:
+				top: 50%
+
+		.service-block-inner
+			
+			.block-info-inner
+				transform: translate(-50%, -50%)
+				display: inline-block
+				position: relative
+				padding:
+					left: 85px
+				height: auto
+				left: 50%
+				top: 50%
+
+				.icon
+					transform: translate(-25%, -25%)
+					position: absolute
+					left: 0
+					top: 0
+
+			.nr-of-places
+				position: relative
+				bottom: auto
+				left: auto
+
+			.title
+				margin: 0 0 10px
+
+		&:hover
+
+			.service-block-inner
+
+				.block-info-inner
+
+					.icon
+						transform: translate(-25%, -25%) rotateY(-180deg)
+
+	.service-block-inner
+		position: absolute
+		overflow: hidden
+		height: 100%
+		width: 100%
+		left: 0
+		top: 0
+
+		.block-info-inner
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			height: 100%
+
+		.title
+			text-transform: uppercase
+			letter-spacing: .2em
+			line-height: 1em
+			font-size: 36px
+			color: #171132
+			display: block
+			margin: -50px 0 35px
+
+		.icon
+			line-height: 1em
+			font-size: 105px
+			color: #171132
+
+		.nr-of-places
+			position: absolute
+			line-height: 1em
+			font-size: 18px
+			color: #171132
+			opacity: .7
+			bottom: 9%
+			left: 9%
+
+		.title,
+		.nr-of-places
+			transition: all 150ms $ease-in-out-quad
+
+		.icon
+			transition: color 150ms $ease-in-out-quad, transform 400ms $ease-in-out-quad
+
+	.service-block-info
+		transition: all 250ms $ease-in-out-quad
+		position: absolute
+		height: 100%
+		width: 100%
+		z-index: 2
+		left: 0
+		top: 0
+
+	.service-block-background
+		transition: all 300ms $ease-in-out-quad
+		transform: scale(1.1)
+		object-fit: cover
+		display: block
+		height: 100%
+		width: 100%
+
+	&:hover
+
+		.service-block-info
+			background: rgba(#fff, 0) !important
+
+		.service-block-inner
+
+			.title,
+			.icon,
+			.nr-of-places
+				color: #fff
+
+			.icon
+				transform: rotateY(-180deg)
+
+		.service-block-background
+			transform: scale(1)
+
+	@media (max-width: 1400px)
+		
+		.service-block-inner
+
+			.title
+				font-size: 28px
+
+			.icon
+				font-size: 80px
+
+			.nr-of-places
+				font-size: 16px
+				bottom: 6%
+				left: 6%
+
+		&.wide
+
+			.service-block-inner
+
+				.block-info-inner
+					padding:
+						left: 70px
+
+					.title
+						margin:
+							bottom: 8px
+
+		&.small
+
+			.service-block-inner
+
+				.icon
+					font-size: 40px
+
+				.title
+					font-size: 11px
+					margin:
+						top: 20px

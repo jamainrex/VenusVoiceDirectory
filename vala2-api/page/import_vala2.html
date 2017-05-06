@@ -1,0 +1,130 @@
+<p><?php _e('Select a folder to import.', 'nggallery'); ?></p>
+<div id="vala_file_browser">
+</div>
+<p>
+<label for="vala2-importML-gallery-id"><?php _e('Gallery', 'nggallery'); ?></label>
+    <select id="vala2-importML-gallery-id">
+        <option value="0"><?php _e('Create a new gallery', 'nggallery'); ?></option>
+        <?php foreach ($galleries as $gallery): ?>
+            <option value="<?php echo esc_attr($gallery->{$gallery->id_field}) ?>"><?php echo esc_attr($gallery->title) ?></option>
+        <?php endforeach ?>
+    </select>
+    <label for="import_gallery_title">
+        <!--<input type="text" name="import_gallery_title" id="import_gallery_title"/>-->
+        <input type="text" name="import_gallery_title2" id="import_gallery_title2"/>
+    </label>
+</p>
+<p>
+    <br/><br/>
+    <input type="button" id="vala2_import_button" name="import_folder" value="<?php _e('Import Folder', 'nggallery'); ?>" class="button-primary"/>
+</p>
+<script type="text/javascript">
+    var selected_folder = null;
+    var selected_vala2_folder = null;
+    var selected_vala2_gallery_name = null;
+    jQuery(function($){
+         
+        // Only run this function once!
+       /* if (typeof($(window).data('ready')) == 'undefined')
+            $(window).data('ready', true);
+        else return;*/
+
+        // Post params
+        var browse_params = {
+            'action': 'vala2_browse_events'
+        };
+        //browse_params.action = 'vala2_browse_events';
+        
+
+        // Render file browser
+        jQuery('#vala_file_browser').fileTree({
+            root:           '/',
+            script:         _vala2_ajax_url,
+            post_params:    browse_params
+        }, function(file){
+            selected_folder = file;
+            $('#vala_file_browser a').each(function(){
+                $(this).removeClass('selected_folder');
+            })
+            $('#vala_file_browser a[rel="'+file+'"]').addClass('selected_folder');
+            
+            selected_vala2_folder = $('#vala_file_browser a[rel="'+file+'"]').prop('lang');
+            selected_vala2_gallery_name = $('#vala_file_browser a[rel="'+file+'"]').data('name');
+            //console.log( selected_vala2_gallery_name );
+            $('#import_gallery_title2').val( selected_vala2_gallery_name );
+            
+            file = file.split("/");
+            file.pop();
+            file = '/'+file.pop();
+            //$('#vala2_import_button').val("Import "+ file );
+        });
+
+        // Import the folder
+        $('#vala2_import_button').click(function(e){
+            e.preventDefault();
+
+            // Show progress bar
+            var progress_bar =  $.nggProgressBar({
+                title: 'Importing gallery',
+                infinite: true,
+                starting_value: 'In Progress...'
+            });
+            
+            
+
+            // Start importing process
+            var post_params = {
+                'action':'import_vala2'
+            };
+            
+            post_params.action = 'import_vala2';
+            post_params.gallery_id = $('#vala2-importML-gallery-id').val();
+            post_params.gallery_name = $('#import_gallery_title2').val();
+            //post_params.gallery_name = 'Test Import';
+            post_params.folder = selected_folder;
+            post_params.vala2_folder = selected_vala2_folder;
+            //post_params.keep_location =  $('#import_keep_location').is(":checked") ? 'on' : 'off';
+            
+            $.post(
+                _vala2_ajax_url,    
+                {
+                    'action':'vala2_get_winner_circles',
+                    'folder':selected_vala2_folder
+                }, 
+                function(response){
+                    if (typeof(response) != 'object') response = JSON.parse(response);
+                    
+                    post_params.vala2_applications = response;
+                    
+                },
+                'json'
+            ).done(function() {
+                
+                     $.post(
+                        //photocrati_ajax.url, 
+                        _vala2_ajax_url, 
+                     post_params, function(response){
+                        if (typeof(response) != 'object') response = JSON.parse(response);
+                        if (typeof(response.error) == 'string') {
+                            progress_bar.set(response.error);
+                            progress_bar.close(4000);
+                        }
+                        else {
+                            <?php $url = admin_url() . 'admin.php?page=nggallery-manage-gallery&mode=edit&gid={gid}'; ?>
+                            var message = '<?php echo sprintf(__('Done! Successfully imported {count} images. <a href="%s" target="_blank">Manage gallery</a>', 'nggallery'), $url); ?>';
+                            message = message.replace('{count}', response.image_ids.length);
+                            message = message.replace('{gid}', response.gallery_id);
+                            progress_bar.close(100);
+                            $.gritter.add({
+                                title: '<?php _e("Upload complete", 'nggallery'); ?>',
+                                text: message,
+                                sticky: true
+                            });
+                        }
+                    });
+              });
+
+            
+        });
+    });
+</script>

@@ -1,0 +1,32 @@
+<div class="wrap">
+        <div id="icon-events-general" class="icon32"><br/></div>
+        <h2><?php _e('VALA 2.0 API Settings', self::TEXT_DOMAIN); ?></h2>
+        <div class="eab-note">
+        <p><?php _e('This is where you manage your VALA 2.0 API Plugin.', self::TEXT_DOMAIN); ?>.</p>
+        </div>
+        <form method="post" action="">
+        <?php wp_nonce_field('vala-update-options'); ?>
+        <div class="eab-metaboxcol metabox-holder eab-metaboxcol-one eab-metaboxcol-center">
+        <?php do_action('vala-settings-before_plugin_settings'); ?>
+            <!-- API settings -->
+            <?php $eb_keys = get_option('vala_api_keys'); $eb_userkey = $eb_keys['vala_user_key']; $eb_appkey = $eb_keys['vala_pass_key']; ?>
+            <div id="eab-settings-apis" class="eab-metabox postbox" style="padding: 10px;">
+                <h3 class="eab-hndle" style="padding: 0;"><?php _e('API settings :', self::TEXT_DOMAIN); ?></h3>
+                <div class="eab-inside">
+                    <div class="eab-settings-settings_item">
+                        <label for="vala2-api-user_key" id="incsub_event-eventbrite-user_key"><?php _e('Email', self::TEXT_DOMAIN); ?></label>
+                        <input type="text" id="vala2-api-user_key" name="vala_default[vala_user_key]" value="<?php print $eb_userkey; ?>" />
+                    </div>
+                    
+                    <div class="eab-settings-settings_item">
+                        <label for="vala2-api-pass-key" id="incsub_event-eventbrite-app_key"><?php _e('Password', self::TEXT_DOMAIN); ?></label>
+                        <input type="password" id="vala2-api-pass-key" name="vala_default[vala_pass_key]" value="<?php print $eb_appkey; ?>" />
+                    </div>    
+                </div>
+            </div>
+            <?php do_action('vala-settings-after_api_settings'); ?>
+        </div>
+        <p class="submit">
+            <input type="submit" class="button-primary" name="submit_settings" value="<?php _e('Update API', self::TEXT_DOMAIN) ?>" />
+        </p>
+        </form>
